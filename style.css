@@ -1,0 +1,134 @@
+body {
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #4A4A48;
+}
+
+/* Bagian title 
+* Berisi header yg di dalamnya terdapat
+* h1 dan nav
+*/
+header {
+    background-color: #2B2B28;
+}
+
+h1 {
+    text-align: center;
+    color: #EBEBE3;
+    font-family: Helvetica, sans-serif;
+}
+
+nav ul li{
+    display: inline;
+    padding: 1em;
+    margin: 0px 1em;
+    flex-grow: 1;
+}
+
+nav ul li:hover{
+    background-color: #2B2B28;
+    color: #EBEBE3;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    background-color: #C19898;
+    
+}
+
+
+/* Bagian main 
+* Berisi main yg di dalamnya terdapat
+* content dan aside
+*/
+
+article{
+    margin-bottom: 2em;
+}
+
+img{
+    margin: 2px auto;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+#content, aside{
+    padding: 1em 2em;
+    margin: 10px 10px 10px 0;
+    background-color: #EBEBE3;
+}
+
+#content{
+    flex-basis: 75%;
+}
+
+aside{
+    flex-basis: 25%;
+}
+
+aside h2{
+    text-align: center;
+}
+
+aside img{
+    margin: 0px auto;
+}
+
+#change{
+    margin: 0px 40%;    
+}
+
+h2{
+    font-family: Helvetica, sans-serif;
+}
+
+p{
+    text-align: justify;
+}
+
+/* Bagian footer 
+* Berisi footer yg di dalamnya terdapat
+*/
+
+footer{
+    background-color: #EBEBE3;
+    padding: 1em;
+}
+
+@media screen and (max-width: 1150px){
+    main{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        max-width: 100%;
+    }
+
+    main {
+        display: block;
+        margin: 0em;
+    }
+
+    #content,
+    aside {
+        padding: 1em 2em;
+        margin: 1em 0em;
+    }
+
+    #content img {
+        height: 45%;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    aside img{
+        margin: 0px auto;
+    }
+}
+
